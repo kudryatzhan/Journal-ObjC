@@ -15,6 +15,7 @@
 		B209190C1FE86D1C00AEF173 /* AKEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = B209190B1FE86D1C00AEF173 /* AKEntry.m */; };
 		B20919101FE86EA900AEF173 /* AKEntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = B209190F1FE86EA900AEF173 /* AKEntryController.m */; };
 		B20919141FE874B700AEF173 /* EntrylistTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B20919131FE874B700AEF173 /* EntrylistTableViewController.m */; };
+		B20919181FE878A900AEF173 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B20919171FE878A900AEF173 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		B209190F1FE86EA900AEF173 /* AKEntryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AKEntryController.m; sourceTree = "<group>"; };
 		B20919121FE874B700AEF173 /* EntrylistTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EntrylistTableViewController.h; sourceTree = "<group>"; };
 		B20919131FE874B700AEF173 /* EntrylistTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EntrylistTableViewController.m; sourceTree = "<group>"; };
+		B20919161FE878A900AEF173 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		B20919171FE878A900AEF173 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,8 @@
 			children = (
 				B20919121FE874B700AEF173 /* EntrylistTableViewController.h */,
 				B20919131FE874B700AEF173 /* EntrylistTableViewController.m */,
+				B20919161FE878A900AEF173 /* DetailViewController.h */,
+				B20919171FE878A900AEF173 /* DetailViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -189,6 +194,7 @@
 				B20919031FE86CEC00AEF173 /* main.m in Sources */,
 				B209190C1FE86D1C00AEF173 /* AKEntry.m in Sources */,
 				B20918F51FE86CEC00AEF173 /* AppDelegate.m in Sources */,
+				B20919181FE878A900AEF173 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,7 +330,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3Q7U33G44V;
-				INFOPLIST_FILE = JournalC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/JournalC/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.self.JournalC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -338,7 +344,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3Q7U33G44V;
-				INFOPLIST_FILE = JournalC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/JournalC/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.self.JournalC;
 				PRODUCT_NAME = "$(TARGET_NAME)";

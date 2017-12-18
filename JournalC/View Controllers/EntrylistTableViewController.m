@@ -15,11 +15,6 @@
 
 @implementation EntrylistTableViewController
 
-- (IBAction)saveEntry:(UIBarButtonItem *)sender {
-    
-}
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
 
