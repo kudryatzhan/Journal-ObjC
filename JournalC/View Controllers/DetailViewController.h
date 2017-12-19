@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-@class AKEntry
+@class AKEntry;
 
-@interface DetailViewController : UIViewController
+@interface DetailViewController : UIViewController <UITextFieldDelegate, UITextViewDelegate> 
+
 
 @property (nonatomic, strong) AKEntry *entry;
+- (void)updateWith:(AKEntry *)entry;
 
 
 @end

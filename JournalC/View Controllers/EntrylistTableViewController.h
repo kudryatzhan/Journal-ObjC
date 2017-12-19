@@ -10,4 +10,5 @@
 
 @interface EntrylistTableViewController : UITableViewController
 
+
 @end

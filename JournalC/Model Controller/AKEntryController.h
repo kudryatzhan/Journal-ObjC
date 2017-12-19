@@ -20,5 +20,6 @@
 #pragma mark - CRUD functions
 - (void)addEntry:(AKEntry *)entry;
 - (void)removeEntry:(AKEntry *)entry;
+- (void)updateEntry:(AKEntry *)entry withTitle:(NSString *)title bodyText:(NSString *)bodyText;
 
 @end

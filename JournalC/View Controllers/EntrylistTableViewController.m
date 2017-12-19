@@ -8,8 +8,11 @@
 
 #import "EntrylistTableViewController.h"
 #import "AKEntryController.h"
+#import "DetailViewController.h"
 
 @interface EntrylistTableViewController ()
+
+//NSDateFormatter *formatter = 
 
 @end
 
@@ -18,6 +21,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.tableView reloadData];
 }
 
 
@@ -30,7 +39,6 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [[[AKEntryController shared] entries] count];
 }
-
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
@@ -52,6 +60,16 @@
         
         [[AKEntryController shared] removeEntry:entry];
         [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    }
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"toEditEntry"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        AKEntry *entry = [AKEntryController shared].entries [indexPath.row];
+        DetailViewController *destinationVC = [segue destinationViewController];
+        [destinationVC setEntry:entry];
     }
 }
 

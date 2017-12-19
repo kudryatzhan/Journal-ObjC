@@ -56,4 +56,10 @@
     [self.internalEntries removeObject:entry];
 }
 
+- (void)updateEntry:(AKEntry *)entry withTitle:(NSString *)title bodyText:(NSString *)bodyText
+{
+    [entry setTitle:title];
+    [entry setBodyText:bodyText];
+}
+
 @end
